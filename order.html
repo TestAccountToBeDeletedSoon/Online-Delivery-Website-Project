@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Biteway: An Online Food Delivery Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <style>
+        .dropdown-content li{
+            text-align: center;
+        }
+        .nav-active{
+            color: yellow !important;
+        }
+         .card .card-image {
+        height: 300px;         
+        overflow: hidden;
+        }
+
+        .card .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;     
+        display: block;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="row">
+            <a href="index.html" class="col s3 m3 l3 btn blue-grey darken-4">Home</a>
+            <a href="menu.html" class="col s3 m3 l3 btn blue-grey darken-4">Menu</a>
+            <a href="about.html" class="col s3 m3 l3 btn blue-grey darken-4">About Us</a>
+            <a href="#" class="col s3 m3 l3 dropdown-trigger btn blue-grey darken-4 nav-active" data-target="dropdown1">More</a>
+        </div>
+    </header>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="contact.html" class="blue-grey darken-4 white-text">Contact</a></li>
+        <li><a href="order.html" class="blue-grey darken-4 white-text nav-active">Order</a></li>
+        <li><a href="services.html" class="blue-grey darken-4 white-text">Services</a></li>
+        <li><a href="faq.html" class="blue-grey darken-4 white-text">FAQ</a></li>
+        <li><a href="gallery.html" class="blue-grey darken-4 white-text">Gallery</a></li>
+        <li><a href="reviews.html" class="blue-grey darken-4 white-text">Reviews</a></li>
+        <li><a href="login.html" class="blue-grey darken-4 white-text">Login</a></li>
+    </ul>
+    
+    <hr>
+    <h1 class="center-align">Order Now!</h1>
+    <div class="container">
+        <h5 class="center-align">Those with the heart icons are our BEST-SELLERS</h5>
+        <h3 class="center-align">Restaurant Menu</h3>
+        <section class="section container scrollspy" id="services">
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3 m3 l3 hide-on-small-only">
+                        <a href="#breakfast" class="active blue-grey darken-4 white-text">Breakfast</a>
+                    </li>
+                    <li class="tab col s3 m3 l3 hide-on-small-only">
+                        <a href="#lunch" class="blue-grey darken-4 white-text">Meals</a>
+                    </li>
+                    <li class="tab col s3 m3 l3 hide-on-small-only">
+                        <a href="#dinner" class="blue-grey darken-4 white-text">Desserts</a>
+                    </li>
+                    <li class="tab col s3 m3 l3 hide-on-small-only">
+                        <a href="#drinks" class="blue-grey darken-4 white-text">Drinks</a>
+                    </li>
+                </ul>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger show-on-small hide-on-med-and-up black-text">
+                    <i class="material-icons prefix">menu</i> Menu
+                </a>
+                <hr class="hide-on-med-and-up black darken-3">
+                <div id="breakfast">
+                    <p class="flow-text indigo-text text-darken-4">Breakfast Meals</p>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="breakfast/Breakfast Food 1.jpg" alt="">
+                                </div>
+                                <div class="card-content center-align">
+                                    <span class="card-title">Hotsilog</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="breakfast/Breakfast Food 2.jpg" alt="">
+                                </div>
+                                <a href="#" class="halfway-fab btn-floating pink pulse" style="top: 260px; right: 0;">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                                <div class="card-content">
+                                    <span class="card-title">Tapsilog</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="breakfast/Breakfast Food 3.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Tosilog</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lunch">
+                    <p class="flow-text indigo-text text-darken-4">Regular Meals</p>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="lunch/Lunch Food 1.jpg" alt="">
+                                </div>
+                                <a href="#" class="halfway-fab btn-floating pink pulse" style="top: 260px; right: 0;">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                                <div class="card-content">
+                                    <span class="card-title">Chicken Adobo</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="lunch/Lunch Food 2.jpg" alt="">
+                                </div>
+                                <a href="#" class="halfway-fab btn-floating pink pulse" style="top: 260px; right: 0;">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                                <div class="card-content">
+                                    <span class="card-title">Kare-Kare</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="lunch/Lunch Food 3.jpg" alt="">
+                                </div>
+                                <a href="#" class="halfway-fab btn-floating pink pulse" style="top: 260px; right: 0;">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                                <div class="card-content">
+                                    <span class="card-title">Bulalo</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dinner">
+                    <p class="flow-text indigo-text text-darken-4">Desserts</p>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="dessert/Dessert 1.png" alt="">
+                                </div>
+                                <a href="#" class="halfway-fab btn-floating pink pulse" style="top: 260px; right: 0;">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                                <div class="card-content">
+                                    <span class="card-title">Halo-Halo</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="dessert/Dessert 2.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Leche Flan</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="dessert/Dessert 3.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Kutsinta</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="drinks">
+                    <p class="flow-text indigo-text text-darken-4">Drinks</p>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="drinks/Drink 1.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Iced Tea</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="drinks/Drink 2.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Coffee</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="drinks/Drink 3.webp" alt="">
+                                </div>
+                                <a href="#" class="halfway-fab btn-floating pink pulse" style="top: 260px; right: 0;">
+                                    <i class="material-icons">favorite</i>
+                                </a>
+                                <div class="card-content">
+                                    <span class="card-title">Sago't Gulaman</span>
+                                    <div class="row valign-wrapper center-align">
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                        <input type="number" value="0" min="0" class="center-align" style="width: 75%;">
+
+                                        <a class="btn-floating btn-small blue-grey darken-3">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m3 l3 offset-m5 offset-l5">
+                <a href="#orderSummary" class="btn modal-trigger">Order Now!</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <ul class="sidenav grey darken-3" id="mobile-menu">
+        <li><a href="#breakfast" class="white-text tab-link">Breakfast</a></li>
+        <li><a href="#lunch" class="white-text tab-link">Meals</a></li>
+        <li><a href="#dinner" class="white-text tab-link">Desserts</a></li>
+        <li><a href="#drinks" class="white-text tab-link">Drinks</a></li>
+    </ul>
+
+    <div id="orderSummary" class="modal">
+    <div class="modal-content">
+        <h4>Your Order Summary</h4>
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <p>Item Name:</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Amount</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Price</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <p>Item 1</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Amount of said Item</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Price of item</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <p>Item 2</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Amount of said Item</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Price of item</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <p>Item 3</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Amount of said Item</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Price of item</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <p>Item 4</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Amount of said Item</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Price of item</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 m4 l4">
+                <p>Item 5</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Amount of said Item</p>
+            </div>
+            <div class="col s4 m4 l4">
+                <p>Price of item</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn green">Confirm</a>
+        <a href="#!" class="modal-close waves-effect waves-red btn red">Cancel</a>
+    </div>
+    </div>
+
+    <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <!-- About / Info -->
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">
+            This is a project website. The photos shown are not mine and belong to their respective creators.
+          </p>
+        </div>
+
+        <!-- Contact / Social -->
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="#"><i class="material-icons">email</i> Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container center-align">
+        <p class="yellow-text">&copy;All Rights Reserved 2025</p>
+      </div>
+    </div>
+</footer>
+    
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+            M.Dropdown.init(dropdownElems, {
+                coverTrigger: false,
+            });
+            var tabElems = document.querySelectorAll('.tabs');
+            M.Tabs.init(tabElems);
+
+            var modals = document.querySelectorAll('.modal');
+            M.Modal.init(modals);
+
+            var sidenavElems = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavElems);
+            document.querySelectorAll('.tab-link').forEach(function(link){
+                link.addEventListener('click', function(e){
+                e.preventDefault();
+                var instance = M.Tabs.getInstance(document.querySelector('.tabs'));
+                instance.select(this.getAttribute('href').substring(1));
+                var sidenav = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+                sidenav.close();
+                });
+            });
+
+        });
+    </script> 
+</body>
+</html>
